@@ -1,0 +1,34 @@
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f44336;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.error.closing {
+  transform: translateY(-100%);
+}
+
+.errorContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorClose {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+}

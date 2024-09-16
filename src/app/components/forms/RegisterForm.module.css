@@ -1,0 +1,95 @@
+.register__form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.register__content {
+  position: relative;
+}
+
+.register__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register__input {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #333333;
+  border: none;
+  border-radius: 3px;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+.register__label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c0c0c0;
+}
+
+.register__btns {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.register__btn {
+  display: block;
+  padding: 10px;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 3px;
+  color: #f0f0f0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register__btn:disabled {
+  background-color: #3f3e3e;
+  pointer-events: none;
+}
+
+.register__btn:hover {
+  background-color: #5c5c5c;
+}
+
+.error {
+  width: 100%;
+  margin-top: 2px;
+  position: absolute;
+  color: #ff6b6b;
+  font-size: 14px;
+  right: 0;
+  z-index: 10;
+  padding: 2px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  background-color: #000000a9;
+}
+
+.register__link {
+  color: #c0c0c0;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.register__link a {
+  color: #db73cd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register__link a:hover {
+  color: #af4da2;
+}

@@ -1,0 +1,95 @@
+.rest-form {
+  color: black;
+  opacity: 0.9;
+  background: rgba(62, 62, 62, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.selectors label,
+.selectors input {
+  cursor: pointer;
+  color: #da1cc1;
+  font-weight: 700;
+}
+
+.top {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.top__input {
+  width: 100%;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: #da1cc1 solid 2px;
+  font-weight: 700;
+}
+
+.form-left,
+.form-right {
+  width: 50%;
+}
+
+.box {
+  display: flex;
+}
+
+.top__btn {
+  background: none;
+  width: 40px;
+  height: 40px;
+  border: solid 2px white;
+  border-radius: 100%;
+  transition: 0.5s;
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.5s;
+  outline: none;
+  margin: 10px 0;
+}
+
+.btn-toggle_active {
+  background: #da1cc1;
+}
+
+@media (hover: hover) {
+  .btn-toggle:hover,
+  .top__btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btn-toggle:active,
+.top__btn:active {
+  transition: 0.2s;
+  transform: scale(0.8);
+}
+
+@media (max-width: 768px) {
+  .form-left,
+  .form-right {
+    width: 100%;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

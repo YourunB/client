@@ -1,0 +1,7 @@
+.page {
+  min-height: calc(100vh - 160px);
+  padding: 20px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,241 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: background 200ms ease-in;
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(236, 230, 230, 0.12);
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logoSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 19px;
+  width: 19px;
+  margin-right: 0.4rem;
+}
+
+.homeLink {
+  color: #da1cc1;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.homeLink:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.navSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.6rem;
+}
+
+.button {
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #da1cc1;
+  text-decoration: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-weight: 600;
+}
+
+.button:hover,
+.languageButton:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+}
+
+.languageDropdown {
+  position: relative;
+}
+
+.languageButton {
+  background: #9b248c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-transform: uppercase;
+}
+
+.languageMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a8a4a4;
+  border: 1px solid #6b6868;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  width: 142px;
+}
+
+.languageOption {
+  padding: 0.5rem 1rem;
+  border: none;
+  /*background: none;*/
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #11030e;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.languageOption:hover {
+  background-color: #f0f0f0;
+  color: #11030e;
+}
+
+.flagIcon {
+  margin-right: 8px;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #da1cc1;
+}
+
+.selectedLanguage {
+  background-color: #911d82;
+  color: white;
+}
+
+.selectedLanguage:disabled {
+  cursor: not-allowed;
+  background-color: #4d454c;
+}
+.selectedLanguage:disabled:hover {
+  cursor: not-allowed;
+  color: white;
+}
+
+.drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #544451;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  z-index: 200;
+  flex-direction: column;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  z-index: 150;
+}
+
+.link {
+  margin: 0.8rem 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.link:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.logout {
+  background-color: #250521;
+  color: #f0f0f0;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  border: none;
+  margin-top: 2rem;
+}
+.logoutDesktop {
+  background-color: #493847;
+  color: #f0f0f0;
+  border: none;
+  margin-right: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-transform: uppercase;
+}
+
+.logout:hover,
+.logoutDesktop:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.drawer .logout {
+  order: 3;
+}
+.userName {
+  text-decoration: underline;
+  order: 2;
+  margin-top: 2rem;
+}
+.userNameDesktop {
+  text-decoration: underline;
+  margin-right: 1rem;
+  text-shadow: 1px 1px 5px #000;
+}

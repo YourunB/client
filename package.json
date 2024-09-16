@@ -1,0 +1,67 @@
+{
+  "name": "graphiql-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky",
+    "lint": "npx eslint **/*.tsx",
+    "format:fix": "npx prettier . --write",
+    "format:check": "npx prettier . --check",
+    "test": "npx vitest --run",
+    "test:coverage": "npx vitest run --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx eslint **/*.tsx",
+      "pre-push": "npx vitest --run"
+    }
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "firebase": "^10.13.1",
+    "i18next": "^23.14.0",
+    "i18next-resources-to-backend": "^1.2.1",
+    "idb": "^8.0.0",
+    "next": "14.2.5",
+    "next-i18n-router": "^5.5.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-firebase-hooks": "^5.1.1",
+    "react-hook-form": "^7.52.2",
+    "react-i18next": "^15.0.1",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^20",
+    "@types/prettier": "^2.7.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@uiw/codemirror-theme-github": "^4.23.0",
+    "@uiw/react-codemirror": "^4.23.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-compiler": "^0.0.0-experimental-8e3b87c-20240821",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "graphql": "^16.9.0",
+    "husky": "^9.1.4",
+    "jsdom": "^24.1.1",
+    "next-router-mock": "^0.9.13",
+    "prettier": "^3.3.3",
+    "react-redux": "^9.1.2",
+    "redux-mock-store": "^1.5.4",
+    "typescript": "^5",
+    "vitest": "^2.0.5"
+  }
+}

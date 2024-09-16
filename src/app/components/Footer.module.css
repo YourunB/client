@@ -1,0 +1,103 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(236, 230, 230, 0.12);
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.authorsSection {
+  text-align: center;
+}
+
+.authorsTitle {
+  font-weight: 600;
+  margin: 0;
+}
+
+.authorsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorItem {
+  margin: 0;
+}
+
+.authorItem {
+  margin-right: 1rem;
+}
+
+.authorItem:last-child {
+  margin-right: 0;
+}
+
+.authorLink {
+  color: #e3addc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.authorLink:hover {
+  text-decoration: underline;
+}
+.copyLogo {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-grow: 1;
+}
+
+.copySection {
+  text-align: center;
+}
+
+.copySection p {
+  margin: 0;
+}
+
+.logoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .authorsSection {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .authorsList {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .authorItem {
+    margin-right: 1rem;
+  }
+
+  .authorItem:last-child {
+    margin-right: 0;
+  }
+
+  .copySection {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  .logoSection {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}

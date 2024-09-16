@@ -1,0 +1,12 @@
+.login {
+  min-height: calc(100vh - 160px);
+  padding: 10px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  border-left: 1px solid rgba(236, 230, 230, 0.12);
+  border-right: 1px solid rgba(236, 230, 230, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
