@@ -76,7 +76,6 @@ export default function GraphForm() {
     const url = new URL(
       `${location.origin}/${language}/graph/${encodeBase64(value || inputValue)}/${encodeBase64(queryValue)}`
     );
-    console.log(url)
     const params = new URLSearchParams();
 
     if (headersValue) params.append('headers', encodeBase64(headersValue));
